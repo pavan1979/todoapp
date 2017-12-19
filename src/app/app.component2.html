@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>User Entry</h2>
+    <hr>
+    <form (submit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" [(ngModel)]="ename" name="ename" />
+        </div>
+
+        <input type="submit" class="btn btn-success" value="Save" />
+
+    </form>
+
+    <hr>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let user of users">{{user}}</li>
+    </ul>
+</div>
